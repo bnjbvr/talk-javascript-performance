@@ -57,7 +57,7 @@
            class="middle" height="400"
            alt="High-five at the Mozilla Festival!">
       <small class="byline">
-        Benjamin Bouvier, Mozilla Corporation, Paris, 2014-06-18
+        Benjamin Bouvier, Mozilla, Paris, 2014-06-18
       </small>
       <footer class="notes">
       </footer>
@@ -85,11 +85,22 @@
       <h2>Il était une fois JavaScript</h2>
     </header>
     <ul style="font-size: 0.95em">
-        <li>Langage inventé par /be en 10 jours</li>
+        <li>Un des trois piliers du développement web avec HTML5 et CSS3</li>
+        <li>Langage de programmation imaginé par /be chez Netscape</li>
         <li>Implémenté dans tous les navigateurs actuels</li>
         <li>Nerf de la guerre de la performance</li>
-        <li>La rencontre entre JavaScript et la compilation à la volée</li>
+        <li>L'arrivée de la compilation à la volée (Mozilla puis Google)</li>
     </ul>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1052px-Unofficial_JavaScript_logo_2.svg.png"
+    style="width:150px; height:150px; top: 70%; left: 80%">
+    </section>
+  </div></div>
+
+  <div id="internal-2" class="slide oneline"><div>
+    <section>
+    <header>
+        <h2>Vitesse : <strong>x 100</strong></h2>
+    </header>
     </section>
   </div></div>
 
@@ -99,9 +110,9 @@
       <h2>Des applications web complexes</h2>
     </header>
         <ul>
-            <li>Clients mails (roundcube, gmail)</li>
-            <li>Réseaux sociaux (facebook, diaspora, twitter)</li>
-            <li>Cartes géographiques annotées (openstreetmaps, gmaps)</li>
+            <li>Clients mails</li>
+            <li>Réseaux sociaux</li>
+            <li>Cartes géographiques</li>
             <li>L'idée : transformer des applications natives en applications
             web</li>
         </ul>
@@ -114,28 +125,12 @@
       <h2>Pourquoi JS ?</h2>
     </header>
         <ul>
-            <li>Brique de base du développement web : implémenté et optimisé
-            dans tous les navigateurs.</li>
-            <li>Multi-paradigmes, haut-niveau : ramasse-miettes, typage
-            dynamique, à prototype (~objet).</li>
-            <li>Les interpréteurs et compilateurs se soucient de la performance
-            à votre place.</li>
-            <li>Portable : prêt pour x86, x64, ARM et donc les
-            téléphones mobiles.</li>
-            <li>Mises à jour simplifiées, distribution aisée.</li>
-        </ul>
-    </section>
-  </div></div>
-
-  <div id="native-concurrent" class="slide"><div>
-    <section>
-    <header>
-      <h2>JavaScript comme concurrent du natif ?</h2>
-    </header>
-        <ul>
-            <li>Performances moins prédictibles que le natif (GC).</li>
-            <li>Le caractère dynamique du langage empêche des optimisations.</li>
-            <li>Caractère très gourmand des applications natives.</li>
+            <li>Brique de base du Web</li>
+            <li>Multi-paradigmes</li>
+            <li>Haut-niveau</li>
+            <li>Optimisé par le navigateur</li>
+            <li>Portable</li>
+            <li>Plateforme Web : Mises à jour et distribution simplifiées</li>
         </ul>
     </section>
   </div></div>
@@ -146,11 +141,11 @@
       <h2>asm.js</h2>
     </header>
         <ul>
-            <li>Un sous-ensemble de JavaScript, pas un nouveau langage</li>
+            <li>Sous-ensemble de JavaScript</li>
             <li>Typé statiquement</li>
             <li>Très bas niveau</li>
-            <li>Objectif : assurer des hautes performances de manière
-            prédictible, <strong>dans tous les navigateurs</strong></li>
+            <li>Objectif : assurer des <strong>hautes performances</strong> de manière
+            <strong>prédictible</strong>, dans <strong>tous</strong> les navigateurs</li>
         </ul>
     </section>
   </div></div>
@@ -169,28 +164,15 @@
   <div id="emscripten-moar" class="slide"><div>
     <section>
     <header>
-      <h2>moar emscripten</h2>
+      <h2>plus d'emscripten</h2>
     </header>
         <ul>
             <li>Basé sur LLVM</li>
-            <li>Compile du C / C++ vers du JavaScript (portage)</li>
+            <li>Compile du C / C++ vers du JavaScript (transpilation)</li>
             <li>Peut générer de l'asm.js</li>
-            <li>Le portage nécessite peu de modifications du code initial<li>
             <li>Associe des APIs HTML5 aux appels systèmes et graphiques</li>
+            <li>Le portage nécessite peu de modifications du code initial<li>
             <li>Facilite le portage d'applications existantes pour le web</li>
-        </ul>
-    </section>
-  </div></div>
-
-  <div id="demos-1" class="slide"><div>
-    <section>
-    <header>
-      <h2>Demo : Dulux web visualizer</h2>
-    </header>
-        <ul>
-            <li>Visualisation et rendering</li>
-            <li>Portage d'une application Android native</li>
-            <li><a href="https://www.dulux.co.uk/web/visualizer/">Dulux</a></li>
         </ul>
     </section>
   </div></div>
@@ -204,6 +186,7 @@
             <li>Portage d'une bibliothèque C++, bullet</li>
             <li><a href="http://kripken.github.io/ammo.js/examples/new/ammo.html">Ammo.js</a></li>
         </ul>
+        <img src="./pictures/ammo.png" style="width: 100%; left: 0px" />
     </section>
   </div></div>
 
@@ -218,6 +201,9 @@
             <li><a
                 href="https://developer.cdn.mozilla.net/media/uploads/demos/a/z/azakai/3baf4ad7e600cbda06ec46efec5ec3b8/bananabread_1373485124_demo_package/index.html">BananaBread</a></li>
         </ul>
+        <img
+        src="http://cdn.arstechnica.net/wp-content/uploads/2012/08/BananaBread1-640x359.png"
+        style="width: 100%; height: 50%">
     </section>
   </div></div>
 
@@ -244,22 +230,32 @@
     </header>
         <ul>
             <li>Portage du moteur de jeu Unreal Engine 3</li>
-            <li>Durée de portage très courte</li>
-            <li><a href="https://www.youtube.com/watch?v=_RDkCVFPl2Q">Video</a></li>
+            <li>Base de plusieurs millions de lignes de code en C++</li>
+            <li>Durée de portage : <strong>4 jours</strong></li>
         </ul>
+        <img
+        src="http://hexus.net/media/uploaded/2013/3/c9ec7e92-a032-4d59-933e-8edc404bf8fe.jpg"
+        style="width: 100%; height: 50%">
     </section>
   </div></div>
 
   <div id="demos-5" class="slide"><div>
     <section>
     <header>
-      <h2>Support par des éditeurs de moteurs de jeux</h2>
+      <h2>Editeurs de moteurs de jeux</h2>
     </header>
         <ul>
-            <li>Unreal Engine 4</li>
             <li>PlayCanvas (exemple : <a href="http://swooop.playcanvas.com/">swoop</a>)</li>
+            <li>Unreal Engine 4</li>
             <li>Unity 5</li>
         </ul>
+        <img
+        src="http://newsletter.igda.org/wp-content/uploads/2013/05/wp-playcanvas.jpg"
+        style="height: 130px; float:left">
+        <img
+        src="http://www.casque-realite-virtuelle.com/wp-content/uploads/2013/06/1347039907_Unreal_Engine_4_logo_620x3801.jpg"
+        style="height: 130px; float: left;">
+        <img src="http://image.jeuxvideo.com/imd/u/unity.jpg" style="float: left; height: 130px;">
     </section>
   </div></div>
 
@@ -282,21 +278,46 @@
       <h2>Autres exemples de portages</h2>
     </header>
         <ul>
+            <li>J2ME</li>
             <li>Python interpreter / Pypy</li>
             <li>SQLite</li>
-            <li>J2ME</li>
             <li>La liste est longue !</li>
         </ul>
     </section>
   </div></div>
 
+  <div id="demos-1" class="slide"><div>
+    <section>
+    <header>
+      <h2>Demo : Dulux web visualizer</h2>
+    </header>
+        <ul>
+            <li>Visualisation et rendering</li>
+            <li>Portage d'une application Android native</li>
+            <li><a href="https://www.dulux.co.uk/web/visualizer/">Dulux</a></li>
+        </ul>
+    </section>
+  </div></div>
+
+  <div id="awfy" class="slide"><div>
+    <section>
+    <header>
+        <h2>L'évolution de la rapidité</h2>
+    </header>
+        <img src="./pictures/zlib.png" style="float:left; width: 50%; ">
+        <img src="./pictures/lua.png" style="float:left; width: 50%; ">
+    </section>
+  </div></div>
+
+
   <div id="future" class="slide"><div>
     <section>
     <header>
-      <h2>Le futur de JavaScript et asm.js</h2>
+      <h2>L'avenir de la performance en JS</h2>
     </header>
         <ul>
-            <li>SIMD</li>
+            <li>Parallel JS</li>
+            <li>SIMD (Single Instruction Multiple Data)</li>
             <li>Multi-threading</li>
         </ul>
     </section>
